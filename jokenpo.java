@@ -18,8 +18,8 @@ public class jokenpo {
 		System.out.println("O jogo terá " + rodadas + " rodadas e quem ganhar mais, vence!");
 		
 		for (int i = 1; i <= rodadas; i++) {
-			System.out.println("\nRodada " + i + ": Escolha 0 - Pedra, 1 - Papel, 2 - Tesoura");
-			int escolhausuario = scanner.nextInt();
+			System.out.println("\nRodada " + i + ": Escolha 1 - Pedra, 2 - Papel, 3 - Tesoura");
+			int escolhausuario = scanner.nextInt() -1;
 			
 			if (escolhausuario < 0 || escolhausuario > 2 ) {
 				System.out.println("Escolha inválida!, Perda da rodada como punição");
